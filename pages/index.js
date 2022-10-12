@@ -1,8 +1,11 @@
+import Link from "next/link";
+import StyledLink from "../components/StyledLink";
+
 export default function Home() {
   return (
     <>
       <h1>Home content here</h1>
-      <a>This is our team</a>
+      <StyledLink href="/team">This is our team</StyledLink>
     </>
   );
 }

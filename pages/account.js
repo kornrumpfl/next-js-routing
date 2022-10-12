@@ -1,3 +1,5 @@
+import Router, { useRouter } from "next/router";
+
 export default function Account() {
   return (
     <>
@@ -15,7 +17,7 @@ export default function Account() {
       <button
         onClick={() => {
           setTimeout(() => {
-            // TODO: change page to '/'
+           Router.push('/') 
           }, 3000);
         }}
       >
