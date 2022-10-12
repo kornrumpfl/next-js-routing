@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import StyledNavLink from "../components/StyledNavLink"
+import StyledNavLink from "../components/StyledNavLink";
 import Link from "next/link";
 import { useRouter } from "next/router";//
 
@@ -15,10 +15,10 @@ export default function Header() {
         <Link href="/product"  passHref>
           <StyledNavLink active={pathname==="/product"}>Product</StyledNavLink>
         </Link>
-        <Link href="team"  passHref>
+        <Link href="/team"  passHref>
           <StyledNavLink active={pathname==="/team"}>Team</StyledNavLink>
         </Link>
-        <Link href="account" passHref>
+        <Link href="/account" passHref>
           <StyledNavLink active={pathname==="/account"}>Account</StyledNavLink>
         </Link>
       </StyledNav>
